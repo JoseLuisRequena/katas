@@ -1,26 +1,29 @@
 export default function daysToXmas(date) {
-    // ¡Y no olvides compartir tu solución en redes!
+    
     const navidad = new Date('Dec, 25, 2021')
     const d = `${date.getMonth()+1}` + `, ${date.getDate()}` + `, ${date.getFullYear()}`;
     const date1 = new Date(d)
     let days = 0;
+    
     if(date1 < navidad){
-      while (date1 < navidad){
-        days++;
-        date1.setDate(date1.getDate() + 1);
-      }
-      return days;
-    } else if(date1 > navidad ){
-      if(date1 > navidad){
-        while (date1 > navidad){
-          days--;
-          date1.setDate(date1.getDate() - 1);
+        while (date1 < navidad){
+            days++;
+            date1.setDate(date1.getDate() + 1);
         }
         return days;
-      }
+    } else if(date1 > navidad ){
+        if(date1 > navidad){
+            while (date1 > navidad){
+                days--;
+                date1.setDate(date1.getDate() - 1);
+            }
+            return days;
+        }
     } else return 0;
 }
-// datos de prueba
+
+
+// test data
 const date1 = new Date('Dec 1, 2021')
 daysToXmas(date1) // 24
 const date2 = new Date('Dec 24, 2021 00:00:01')
