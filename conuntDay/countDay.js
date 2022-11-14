@@ -1,4 +1,4 @@
-export default function daysToXmas(date) {
+function daysToXmas(date) {
     
     const navidad = new Date('Dec, 25, 2021')
     const d = `${date.getMonth()+1}` + `, ${date.getDate()}` + `, ${date.getFullYear()}`;
