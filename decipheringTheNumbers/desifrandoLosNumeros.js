@@ -38,9 +38,10 @@ function decodeNumber(symbols) {
             .reduce((previousValue, currentValue) => previousValue + currentValue, initialValue)
         return sumNumberList
     }
+
 }
 
-
+//test data
 decodeNumber('...') // 3
 decodeNumber('.,') // 4 (5 - 1)
 decodeNumber(',.') // 6 (5 + 1)
