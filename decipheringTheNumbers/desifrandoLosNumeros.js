@@ -1,26 +1,27 @@
 function decodeNumber(symbols) {
     let numberList = [];
+    
     for( let leter of symbols ){
-      switch (leter) {
-        case '.':
-          numberList.push(1);
-          break;
-        case ",":
-          numberList.push(5);
-          break;
-        case ":":
-          numberList.push(10);
-          break;
-        case ";":
-          numberList.push(50);
-          break;
-        case "!":
-          numberList.push(100);
-          break;
-        default:
-          numberList.push(NaN);
-          break;
-      }
+        switch (leter) {
+            case '.':
+                numberList.push(1);
+                break;
+            case ",":
+                numberList.push(5);
+                break;
+            case ":":
+                numberList.push(10);
+                break;
+            case ";":
+                numberList.push(50);
+                break;
+            case "!":
+                numberList.push(100);
+                break;
+            default:
+                numberList.push(NaN);
+                break;
+        }
     }
 
     for( let i = 0 ; i < numberList.length ; i++ ){
