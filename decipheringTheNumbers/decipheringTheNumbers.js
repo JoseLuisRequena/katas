@@ -1,5 +1,5 @@
 function decodeNumber(symbols) {
-    // ¡No olvides compartir tu solución en redes!
+    
     let numberList = [];
     for( let leter of symbols ){
         switch (leter) {
